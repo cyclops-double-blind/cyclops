@@ -1,0 +1,9 @@
+@PACKAGE_INIT@
+
+include("${CMAKE_CURRENT_LIST_DIR}/cyclopsTargets.cmake")
+
+find_package(Ceres REQUIRED)
+find_package(Eigen3 REQUIRED)
+find_package(spdlog REQUIRED)
+
+check_required_components(cyclops)

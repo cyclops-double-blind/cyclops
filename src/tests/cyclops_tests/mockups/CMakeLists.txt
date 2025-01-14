@@ -1,0 +1,10 @@
+target_sources(
+  cyclops_testlib
+  PRIVATE
+  ${CMAKE_CURRENT_LIST_DIR}/data_provider.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/data_provider.hpp
+  ${CMAKE_CURRENT_LIST_DIR}/initializer.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/initializer.hpp
+  ${CMAKE_CURRENT_LIST_DIR}/keyframe_manager.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/keyframe_manager.hpp
+)

@@ -1,0 +1,19 @@
+cmake_minimum_required(VERSION 3.5)
+project(configure-ceres NONE)
+
+include(ExternalProject)
+ExternalProject_Add(ceres
+  GIT_REPOSITORY https://github.com/ceres-solver/ceres-solver
+  GIT_TAG 2.0.0
+  GIT_SHALLOW 1
+  SOURCE_DIR "${CMAKE_BINARY_DIR}/${PROJECT_NAME}/ceres-src"
+  BINARY_DIR "${CMAKE_BINARY_DIR}/${PROJECT_NAME}/ceres-build"
+  CMAKE_ARGS "-DCMAKE_INSTALL_PREFIX=${CMAKE_BINARY_DIR}/${PROJECT_NAME}/ceres"
+             "-DCMAKE_CXX_STANDARD=17"
+             "-DCMAKE_CXX_FLAGS:STRING=${cyclops_ceres_compile_flags}"
+             "-DCMAKE_C_FLAGS:STRING=${cyclops_ceres_compile_flags}"
+             "-DCMAKE_PREFIX_PATH=${CMAKE_BINARY_DIR}/${PROJECT_NAME}/eigen"
+             "-DBUILD_TESTING=OFF"
+             "-DBUILD_EXAMPLES=OFF"
+             "-DBUILD_BENCHMARKS=OFF"
+             "-DSCHUR_SPECIALIZATIONS=ON")

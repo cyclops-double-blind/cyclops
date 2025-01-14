@@ -1,0 +1,12 @@
+target_sources(cyclops_test
+  PRIVATE
+  ${CMAKE_CURRENT_SOURCE_DIR}/_main.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/cyclops.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/initializer-imu.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/initializer-vision-hypothesis.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/initializer-vision-multiview.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/initializer-vision-twoview.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/initializer-vision.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/initializer.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/optimizer-guess.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/optimizer.cpp)

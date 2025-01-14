@@ -1,0 +1,13 @@
+target_sources(cyclops
+  PRIVATE
+  ${CMAKE_CURRENT_SOURCE_DIR}/factor.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/factor.hpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/graph.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/graph.hpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/graph_cost_helper.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/graph_cost_helper.hpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/graph_node_map.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/graph_node_map.hpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/node.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/node.hpp
+)

@@ -1,0 +1,11 @@
+target_sources(
+  cyclops_testlib
+  PRIVATE
+  ${CMAKE_CURRENT_LIST_DIR}/imu.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/imu.hpp
+  ${CMAKE_CURRENT_LIST_DIR}/landmark.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/landmark.hpp
+  ${CMAKE_CURRENT_LIST_DIR}/rotation.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/rotation.hpp
+  ${CMAKE_CURRENT_LIST_DIR}/typefwd.hpp
+)
