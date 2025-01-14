@@ -1,0 +1,13 @@
+target_sources(cyclops
+  PRIVATE
+  ${CMAKE_CURRENT_SOURCE_DIR}/initializer.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/initializer.hpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/solver.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/solver.hpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/vision.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/vision.hpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/vision_imu.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/vision_imu.hpp
+)
+add_subdirectory(vision)
+add_subdirectory(vision_imu)

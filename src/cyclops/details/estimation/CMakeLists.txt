@@ -1,0 +1,19 @@
+target_sources(cyclops
+  PRIVATE
+  ${CMAKE_CURRENT_SOURCE_DIR}/estimator.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/estimator.hpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/optimizer.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/optimizer.hpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/optimizer_guess.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/optimizer_guess.hpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/propagation.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/propagation.hpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/sanity.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/sanity.hpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/type.hpp
+)
+
+add_subdirectory(ceres)
+add_subdirectory(graph)
+add_subdirectory(marginalizer)
+add_subdirectory(state)

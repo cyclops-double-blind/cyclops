@@ -1,0 +1,9 @@
+target_sources(cyclops
+  PRIVATE
+  ${CMAKE_CURRENT_SOURCE_DIR}/initializer.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/initializer.hpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/keyframe.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/keyframe.hpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/optimizer.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/optimizer.hpp
+)

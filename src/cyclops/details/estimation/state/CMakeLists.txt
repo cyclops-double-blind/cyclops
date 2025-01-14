@@ -1,0 +1,13 @@
+target_sources(cyclops
+  PRIVATE
+  ${CMAKE_CURRENT_SOURCE_DIR}/accessor.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/accessor.hpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/accessor_read.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/accessor_read.hpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/accessor_write.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/accessor_write.hpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/state_block.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/state_block.hpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/state_internal.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/state_internal.hpp
+)
